@@ -7,7 +7,6 @@ from dotenv import load_dotenv
 root = dirname(abspath(__file__))
 MEDIA_DIR = join(root, "media")
 
-
 # Envirionment Variables
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
@@ -19,5 +18,7 @@ except:
 
 # Strings
 HELP_TEXT = {
-    'total': 'Bruder ich joine deinem Channel und spiel nen sound ab'
-} 
+    'total': 'Bruder ich joine deinem Channel und spiel nen sound ab',
+    'dl' : 'Gib mir URL und ich lade runter.',
+    'show' : 'Zeige vorhandene sounds'
+}
